@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/css/main.58a092b3.css",
+    "main.js": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/js/main.719ba29b.js",
+    "index.html": "/rakhmiddin-dekhkonov/yoshops-billing-software/index.html",
+    "main.58a092b3.css.map": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/css/main.58a092b3.css.map",
+    "main.719ba29b.js.map": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/js/main.719ba29b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58a092b3.css",
+    "static/js/main.719ba29b.js"
+  ]
+}
