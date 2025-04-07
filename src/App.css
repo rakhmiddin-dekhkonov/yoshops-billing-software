@@ -1,0 +1,451 @@
+/* src/App.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e8f0fe;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+.app-container {
+  max-width: 100%;
+  margin:auto;
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+  
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  height: auto; 
+}
+
+.frame {
+  border: 2px solid #0077cc;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #f0f8ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Title Section Frame */
+.title-frame {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #003366;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Customer Info Fields */
+.customer-frame {
+  padding: 20px 10px;
+}
+
+.customer-info {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.customer-info input {
+  padding: 10px;
+  font-size: 15px;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.customer-info input:focus {
+  border-color: #0077cc;
+}
+
+
+/* Menu Inputs Section */
+.menu-bill-frame {
+  /* display: flex; */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 10px;
+}
+
+.menu-frame {
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 98%;
+}
+
+.main-layout {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-wrapper {
+  width: 70%;
+  margin: 0;
+}
+
+.menu-inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-column {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f8ff;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width:250%;
+}
+
+.menu-item label {
+  flex: 1;
+  font-weight: 500;
+  color: #003366;
+}
+
+.menu-item input {
+  width: 60px;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  text-align: center;
+}
+
+/* Action Buttons */
+.actions {
+  text-align: center;
+  margin-bottom: 25px;
+  z-index: 1000;
+}
+
+.actions button {
+  padding: 10px 20px;
+  margin: 0 15px;
+  font-size: 16px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.actions button:hover {
+  background-color: #005fa3;
+}
+
+/* Bill Output */
+.bill-frame {
+  width: 98%;
+  border: 1px solid #ccc;
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.bill-area-text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.bill-area {
+  width: 98%;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  resize: none;
+}
+
+
+/* Message Button */
+.message-buttons-container {
+  position: fixed; /* Fix it to the bottom */
+  bottom: 20px; /* Distance from the bottom of the screen */
+  left: 0; /* Start from the left edge */
+  right: 0; /* Stretch to the right edge */
+  display: flex;
+  justify-content: space-between; /* Space out the items */
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+/* WhatsApp button */
+.whatsapp-btn {
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.whatsapp-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Send Message button */
+.send-msg-btn {
+  background-color: #25d366; /* WhatsApp color */
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+
+.send-msg-btn:hover {
+  background-color: #1ebea5;
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: absolute;
+  top: -400px; /* Adjust this to control the distance from the Send Message button */
+  right: 0; /* Position the modal at the right corner */
+  width: 300px; /* Modal width */
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal Styling */
+.modal {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  border: 1px solid #ccc;
+}
+
+/* Modal Style */
+h3 {
+  font-size: 12px;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+
+/* Input and Textarea Styles */
+.modal input,
+.modal textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+label {
+  font-size: 14px;
+  color: #003366;
+}
+
+.modal button {
+  padding: 10px 20px;
+  color: #0077cc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Close button for Modal */
+.modal-close-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+
+/* ========== RESPONSIVE DESIGN ========== */
+
+@media (max-width: 1024px) {
+  .customer-info input {
+    width: 100%;
+  }
+  
+  .menu-bill-frame {
+    flex-direction: column;
+  }
+
+  .menu-frame, .bill-frame {
+    width: 95%;
+  }
+
+  .menu-item {
+    width: 250%;
+    flex-wrap: wrap;
+  }
+
+  .menu-item{
+    margin: auto;
+  }  
+
+  .bill-area-text {
+    font-size: 24px;
+  }
+}
+
+
+/* Tablets: 768px and below */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .customer-info input {
+    width: 100%;
+  }
+  
+  .menu-bill-frame {
+    flex-direction: column;
+  }
+
+  .menu-frame, .bill-frame {
+    width: 95%;
+  }
+
+  .menu-item {
+    width: 245%;
+    flex-wrap: wrap;
+  }
+
+  .menu-item{
+    margin: auto;
+  }  
+
+  .menu-item label {
+    font-size: 14px;
+  }
+
+  .menu-item 
+
+  .bill-area-text {
+    font-size: 24px;
+  }
+}
+
+/* Phones: 480px and below */
+@media (max-width: 480px) {
+  .title-frame {
+    font-size: 22px;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .customer-info {
+    flex-direction: column;
+  }
+
+  .customer-info input {
+    width: 94%;
+    font-size: 14px;
+  }
+
+  .menu-frame, .bill-frame {
+    width: 90%;
+  }
+  
+  .menu-column {
+    width: 100%;
+  }
+
+  .menu-item {
+    width: 125%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-item label {
+    font-size: 14px;
+  }
+
+  .menu-item input {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .menu-inputs {
+    flex-direction: column;
+  }
+
+  .bill-area {
+    width: 91%;
+  }  
+
+  .actions button {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .bill-area-text {
+    font-size: 20px;
+  }
+}
+  
+  
