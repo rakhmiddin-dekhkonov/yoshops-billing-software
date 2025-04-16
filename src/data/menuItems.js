@@ -87,7 +87,7 @@ const menuItems = [
   {
     category: "Seafood",
     name: "River Prawn Small- 4cm 250gm (Berhampur)",
-    price: 59
+    price: 99
   },
   {
     category: "Seafood",
@@ -112,7 +112,7 @@ const menuItems = [
   {
     category: "Seafood",
     name: "River Prawn Raw Big-12cm 250gm (Berhampur)",
-    price: 99
+    price: 149
   },
   {
     category: "Seafood",
