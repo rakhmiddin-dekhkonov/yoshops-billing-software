@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/css/main.58a092b3.css",
-    "main.js": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/js/main.f54159b1.js",
-    "index.html": "/rakhmiddin-dekhkonov/yoshops-billing-software/index.html",
-    "main.58a092b3.css.map": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/css/main.58a092b3.css.map",
-    "main.f54159b1.js.map": "/rakhmiddin-dekhkonov/yoshops-billing-software/static/js/main.f54159b1.js.map"
+    "main.css": "/yoshops-billing-software/static/css/main.58a092b3.css",
+    "main.js": "/yoshops-billing-software/static/js/main.f54159b1.js",
+    "index.html": "/yoshops-billing-software/index.html",
+    "main.58a092b3.css.map": "/yoshops-billing-software/static/css/main.58a092b3.css.map",
+    "main.f54159b1.js.map": "/yoshops-billing-software/static/js/main.f54159b1.js.map"
   },
   "entrypoints": [
     "static/css/main.58a092b3.css",
